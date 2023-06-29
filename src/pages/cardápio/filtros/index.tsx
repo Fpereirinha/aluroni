@@ -1,7 +1,8 @@
 import filtros from "./filtros.json";
+import React from "react";
 import styles from "./Filtros.module.scss";
 import classNames from "classnames";
-type IOpcao = typeof filtros[0];
+type IOpcao = (typeof filtros)[0];
 interface Props {
 	filtro: number | null;
 	setFiltro: React.Dispatch<React.SetStateAction<number | null>>;

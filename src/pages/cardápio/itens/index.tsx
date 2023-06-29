@@ -16,14 +16,14 @@ export default function Itens({ filtro, ordenador, busca }: Props) {
 	}
 	function ordenar(novalista: typeof cardapio) {
 		switch (ordenador) {
-			case "porcao":
-				return ordenarPropriedadeCrescente(novalista, "size");
-			case "qtd_pessoas":
-				return ordenarPropriedadeCrescente(novalista, "serving");
-			case "preco":
-				return ordenarPropriedadeCrescente(novalista, "price");
-			default:
-				return novalista;
+		case "porcao":
+			return ordenarPropriedadeCrescente(novalista, "size");
+		case "qtd_pessoas":
+			return ordenarPropriedadeCrescente(novalista, "serving");
+		case "preco":
+			return ordenarPropriedadeCrescente(novalista, "price");
+		default:
+			return novalista;
 		}
 	}
 	function testaBusca(title: string) {
